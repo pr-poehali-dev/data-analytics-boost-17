@@ -8,7 +8,7 @@ export default function Header({ className }: HeaderProps) {
       <div className="flex justify-between items-center">
         <div className="text-white text-sm uppercase tracking-widest flex items-center gap-2">
           <span className="text-green-400 text-lg">☘</span>
-          <span>Clover Arch</span>
+          <span>Revival</span>
         </div>
         <nav className="flex gap-8">
           <a
