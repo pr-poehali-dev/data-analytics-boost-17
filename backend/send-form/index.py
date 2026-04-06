@@ -35,7 +35,7 @@ def handler(event: dict, context) -> dict:
     )
 
     token = os.environ['TELEGRAM_BOT_TOKEN']
-    chat_id = '7282216386'
+    chat_id = os.environ['TELEGRAM_CHAT_ID']
 
     url = f'https://api.telegram.org/bot{token}/sendMessage'
     payload = json.dumps({
