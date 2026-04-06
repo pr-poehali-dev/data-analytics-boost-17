@@ -28,6 +28,12 @@ export default function Header({ className, onNavigate }: HeaderProps) {
           </div>
           <nav className="flex gap-8 items-center">
             <button
+              onClick={() => handleNav("mission")}
+              className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
+            >
+              О нас
+            </button>
+            <button
               onClick={() => handleNav("projects")}
               className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
             >
@@ -38,6 +44,12 @@ export default function Header({ className, onNavigate }: HeaderProps) {
               className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
             >
               Наши партнёры
+            </button>
+            <button
+              onClick={() => handleNav("premium")}
+              className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
+            >
+              Premium
             </button>
             <button
               onClick={() => setOpen(true)}
