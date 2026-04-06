@@ -9,10 +9,6 @@ export default function Featured() {
         />
       </div>
       <div className="flex-1 text-left lg:h-[800px] flex flex-col justify-center lg:mr-12 lg:order-1">
-        <div className="flex items-center gap-2 mb-4">
-          <span className="text-neutral-800 text-xl">☘</span>
-          <h3 className="uppercase text-sm tracking-widest text-neutral-500">ИИ на вашей стороне</h3>
-        </div>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
           Мы анализируем ваши желания, предлагаем концепции и воплощаем их в жизнь.
         </p>
