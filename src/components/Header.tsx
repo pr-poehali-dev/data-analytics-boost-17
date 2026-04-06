@@ -10,7 +10,7 @@ export default function Header({ className }: HeaderProps) {
           <span className="text-white text-lg">☘</span>
           <span>Revival</span>
         </div>
-        <nav className="flex gap-8">
+        <nav className="flex gap-8 items-center">
           <a
             href="#about"
             className="text-white hover:text-green-400 transition-colors duration-300 uppercase text-sm"
@@ -22,6 +22,12 @@ export default function Header({ className }: HeaderProps) {
             className="text-white hover:text-green-400 transition-colors duration-300 uppercase text-sm"
           >
             Контакты
+          </a>
+          <a
+            href="mailto:revivalbyks@mail.ru"
+            className="text-white hover:text-green-400 transition-colors duration-300 text-sm"
+          >
+            revivalbyks@mail.ru
           </a>
         </nav>
       </div>
