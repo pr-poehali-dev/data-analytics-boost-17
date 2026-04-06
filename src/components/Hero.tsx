@@ -31,7 +31,7 @@ export default function Hero() {
           Revival
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90 leading-relaxed">
-          Реставрация и декорирование жилых участков с помощью искусственного интеллекта — быстро, точно и вдохновляюще
+          Обустройка и создание с нуля жилых участков с помощью мастерства декораторов и точности нейросетей
         </p>
         <button className="mt-10 border border-white text-white px-8 py-3 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition-all duration-300 cursor-pointer">
           Узнать больше
