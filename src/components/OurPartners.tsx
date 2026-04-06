@@ -76,8 +76,8 @@ export default function OurPartners() {
               key={partner.id}
               className="bg-white border border-gray-100 p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:border-gray-300 group"
             >
-              <div className="w-16 h-16 rounded-full bg-gray-900 text-white flex items-center justify-center text-lg font-light mb-5 group-hover:bg-black transition-colors duration-300">
-                {partner.logo}
+              <div className="w-full aspect-[3/2] bg-gray-100 border border-gray-200 flex items-center justify-center mb-5">
+                <span className="text-xs uppercase tracking-widest text-gray-300">Логотип</span>
               </div>
               <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">{partner.category}</p>
               <h3 className="text-lg font-light text-gray-900 mb-3">{partner.name}</h3>
