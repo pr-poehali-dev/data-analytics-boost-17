@@ -30,6 +30,15 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
+                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
+                <a
+                  href="mailto:revivalbyks@mail.ru"
+                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                >
+                  revivalbyks@mail.ru
+                </a>
+              </div>
+              <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Услуги</h3>
                 <a
                   href="#restore"
