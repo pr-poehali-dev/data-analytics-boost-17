@@ -14,7 +14,7 @@ export default function Featured() {
           <h3 className="uppercase text-sm tracking-widest text-neutral-500">ИИ на вашей стороне</h3>
         </div>
         <p className="text-2xl lg:text-4xl mb-8 text-neutral-900 leading-tight">
-          Мы анализируем ваш участок, предлагаем концепции и воплощаем их в жизнь — всё это быстрее и точнее, чем традиционный подход.
+          Мы анализируем ваши желания, предлагаем концепции и воплощаем их в жизнь.
         </p>
         <div className="flex flex-col gap-3 mb-8 text-neutral-600 text-base">
           <div className="flex items-center gap-2"><span className="text-neutral-800">☘</span> ИИ-визуализация результата до начала работ</div>
