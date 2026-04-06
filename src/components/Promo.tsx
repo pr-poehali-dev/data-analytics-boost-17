@@ -18,7 +18,7 @@ export default function Promo() {
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
         <motion.div style={{ y }} className="relative w-full h-full">
           <img
-            src="/images/desk.png"
+            src="https://cdn.poehali.dev/projects/89b6f1d6-21ef-4feb-8a5c-fdf3a4c7581f/files/3201afb0-74e0-4c66-879d-3d9ff222e532.jpg"
             alt="Architectural design workspace"
             className="w-full h-full object-cover"
           />
@@ -26,7 +26,7 @@ export default function Promo() {
       </div>
 
       <div className="absolute inset-0 bg-black/50 z-[1]" />
-      <h3 className="absolute top-12 right-6 text-green-400 uppercase z-10 text-sm md:text-base lg:text-lg tracking-widest flex items-center gap-2">
+      <h3 className="absolute top-12 right-6 text-white uppercase z-10 text-sm md:text-base lg:text-lg tracking-widest flex items-center gap-2">
         <span>☘</span> Технология будущего
       </h3>
 
