@@ -23,12 +23,6 @@ export default function Header({ className }: HeaderProps) {
           >
             Контакты
           </a>
-          <a
-            href="mailto:revivalbyks@mail.ru"
-            className="text-white hover:text-green-400 transition-colors duration-300 text-sm"
-          >
-            revivalbyks@mail.ru
-          </a>
         </nav>
       </div>
     </header>
