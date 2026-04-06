@@ -36,12 +36,23 @@ export default function ApplicationForm({ open, onClose }: ApplicationFormProps)
     consultationType: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   if (!open) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    try {
+      await fetch('https://functions.poehali.dev/2d1d0700-4ae4-44b8-b90c-086432b1d9ab', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+    } finally {
+      setLoading(false);
+      setSubmitted(true);
+    }
   };
 
   const handleClose = () => {
@@ -171,9 +182,10 @@ export default function ApplicationForm({ open, onClose }: ApplicationFormProps)
 
             <button
               type="submit"
-              className="mt-2 bg-neutral-900 text-white py-4 uppercase text-sm tracking-widest hover:bg-neutral-700 transition-all duration-300 cursor-pointer"
+              disabled={loading}
+              className="mt-2 bg-neutral-900 text-white py-4 uppercase text-sm tracking-widest hover:bg-neutral-700 transition-all duration-300 cursor-pointer disabled:opacity-50"
             >
-              Отправить анкету
+              {loading ? 'Отправляем...' : 'Отправить анкету'}
             </button>
           </form>
         )}
