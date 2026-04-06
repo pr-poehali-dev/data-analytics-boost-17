@@ -3,10 +3,20 @@ import ApplicationForm from "./ApplicationForm";
 
 interface HeaderProps {
   className?: string;
+  onNavigate?: (section: string) => void;
 }
 
-export default function Header({ className }: HeaderProps) {
+export default function Header({ className, onNavigate }: HeaderProps) {
   const [open, setOpen] = useState(false);
+
+  const handleNav = (section: string) => {
+    if (onNavigate) {
+      onNavigate(section);
+    } else {
+      const el = document.getElementById(section);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -18,8 +28,20 @@ export default function Header({ className }: HeaderProps) {
           </div>
           <nav className="flex gap-8 items-center">
             <button
+              onClick={() => handleNav("projects")}
+              className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
+            >
+              Наши проекты
+            </button>
+            <button
+              onClick={() => handleNav("partners")}
+              className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
+            >
+              Наши партнёры
+            </button>
+            <button
               onClick={() => setOpen(true)}
-              className="text-white hover:text-green-400 transition-colors duration-300 uppercase text-sm cursor-pointer"
+              className="text-white hover:text-black bg-transparent hover:bg-white transition-all duration-300 uppercase text-sm cursor-pointer px-3 py-1"
             >
               Анкета
             </button>
