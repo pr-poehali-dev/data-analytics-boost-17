@@ -31,7 +31,7 @@ export default function PremiumSubscription() {
               Premium Subscription
             </h2>
             <p className="text-sm text-neutral-400 max-w-xs leading-relaxed">
-              Часть средств от подписки направляется на благотворительность — вы помогаете другим, улучшая своё пространство.
+              100% средств от подписки направляется на благотворительность — вы помогаете другим, улучшая своё пространство.
             </p>
           </div>
         </div>
@@ -52,12 +52,20 @@ export default function PremiumSubscription() {
         </div>
 
         <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border-t border-neutral-700 pt-10">
-          <p className="text-neutral-300 text-sm leading-relaxed max-w-md">
-            Присоединяйтесь к Premium и получите полное сопровождение вашего проекта от лучших специалистов Revival.
-          </p>
-          <button className="border border-white text-white px-8 py-3 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition-all duration-300 cursor-pointer whitespace-nowrap">
-            Подключить
-          </button>
+          <div>
+            <p className="text-neutral-300 text-sm leading-relaxed max-w-md mb-3">
+              Присоединяйтесь к Premium и получите полное сопровождение вашего проекта от лучших специалистов Revival.
+            </p>
+            <p className="text-neutral-500 text-xs uppercase tracking-widest">
+              Все 100% средств идут на благотворительность
+            </p>
+          </div>
+          <div className="flex flex-col items-end gap-3">
+            <p className="text-white text-2xl font-light">2 000 ₽<span className="text-neutral-400 text-sm"> / мес</span></p>
+            <button className="border border-white text-white px-8 py-3 uppercase text-sm tracking-widest hover:bg-white hover:text-black transition-all duration-300 cursor-pointer whitespace-nowrap">
+              Подключить
+            </button>
+          </div>
         </div>
       </div>
     </section>
