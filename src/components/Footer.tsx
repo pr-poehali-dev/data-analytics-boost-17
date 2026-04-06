@@ -11,20 +11,14 @@ export default function Footer() {
               <div className="flex flex-col gap-1 sm:gap-2">
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Компания</h3>
                 <a
-                  href="#projects"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Проекты
-                </a>
-                <a
                   href="#mission"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   О нас
                 </a>
                 <a
                   href="#contact"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   Связаться
                 </a>
@@ -33,7 +27,7 @@ export default function Footer() {
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Контакты</h3>
                 <a
                   href="mailto:revivalbyks@mail.ru"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   revivalbyks@mail.ru
                 </a>
@@ -42,19 +36,19 @@ export default function Footer() {
                 <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Услуги</h3>
                 <a
                   href="#restore"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   Реставрация
                 </a>
                 <a
                   href="#decor"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   Декорирование
                 </a>
                 <a
                   href="#ai"
-                  className="text-white hover:text-green-400 transition-colors duration-300 text-sm sm:text-base"
+                  className="text-white hover:text-white/70 transition-colors duration-300 text-sm sm:text-base"
                 >
                   ИИ-визуализация
                 </a>
